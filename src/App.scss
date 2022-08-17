@@ -1,0 +1,125 @@
+$cream: #FAF9F6;
+$text: rgb(133, 96, 96);
+$placeholder: rgb(199, 189, 179);
+$beige: #F6F2EA;
+$hover: #f8edd5;
+$shadow: #d3c6ac;
+$light-shadow: #f1ebdf;
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 80vh;
+  height: 100vh;
+  // text-align: center;
+  font-size: 22px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+  color: $text;
+}
+
+.home-page {
+  // background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $text;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+button {
+  background-color: $beige;
+  height: 20px;
+  width: 100px;
+  border: none;
+  margin: 10px;
+  box-shadow: 2px 2px 5px $shadow;
+}
+
+button:hover {
+  background-color: $hover;
+  box-shadow: none;
+}
+
+.card-content  {
+  padding: 10px;
+}
+
+.new-deck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ::placeholder {
+    color: $placeholder;
+    text-align: center;
+    font-style: italic;
+  }
+
+  input {
+    border: none;
+    margin: 5px;
+    height: 30px;
+    width: 300px;
+    background-color: $cream;
+    box-shadow: 1px 1px 3px $light-shadow;
+  }
+
+  .new-deck-name {
+    height: 50px;
+    font-size: 36px;
+  }
+
+  .definition {
+    height: 300px;
+  }
+
+  .get-wr-def {
+    color: $text;
+  }
+
+  .get-wr-def:hover {
+    background-color: $hover;
+  }
+
+  .add-card {
+    color: $text;
+  }
+
+  .add-card:hover {
+    background-color: $hover;
+  }
+
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $beige;
+  width: 60vh;
+  height: 60vh;
+
+  .card-input {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card-list {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  .new-card {
+    background-color: $beige;
+    height: 100px;
+    width: 75px;
+    box-shadow: 2px 2px 5px $shadow;
+  }
+}
